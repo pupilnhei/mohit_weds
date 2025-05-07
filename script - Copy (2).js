@@ -63,10 +63,10 @@ window.onload = function() {
     
     // Update names if needed
     if (document.querySelector('#leftName')) {
-        document.getElementById('leftName').textContent = "Saurabh";
+        document.getElementById('leftName').textContent = "Babita";
     }
     if (document.querySelector('#rightName')) {
-        document.getElementById('rightName').textContent = "Khushi";
+        document.getElementById('rightName').textContent = "Saurabh";
     }
 };
 
@@ -130,7 +130,7 @@ function setupImageSlider() {
 
 // Countdown timer to wedding day
 function setupCountdown() {
-    // Set the wedding date - June 5, 2025 (main wedding day)
+    // Set the wedding date - June 5, 2025
     const weddingDate = new Date("June 5, 2025 10:00:00").getTime();
     
     // Update the countdown every second
