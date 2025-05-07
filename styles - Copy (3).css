@@ -255,53 +255,6 @@ body {
     background-color: #DCEDC2;
 }
 
-.event-reception {
-    background-color: #E6D7B9;
-}
-
-/* Wedding schedule section */
-.event-wedding-container {
-    position: relative;
-}
-
-.wedding-schedule {
-    border-left: 2px dashed var(--primary-color);
-    margin-left: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-}
-
-.wedding-event {
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.wedding-event:before {
-    content: "";
-    position: absolute;
-    left: -28px;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    background-color: var(--primary-color);
-    border: 3px solid var(--light-accent);
-    border-radius: 50%;
-}
-
-/* Date banner */
-.date-banner {
-    background-color: var(--light-accent);
-    color: var(--primary-color);
-    padding: 8px 16px;
-    border-radius: 6px;
-    display: inline-block;
-    margin: 0 auto;
-    font-weight: 500;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--accent-color);
-}
-
 /* BUTTONS */
 .btn {
     padding: 8px 16px;
@@ -354,15 +307,6 @@ body {
     margin: 16px 0;
 }
 
-/* RSVP Section */
-.rsvp-section {
-    margin: 40px 0;
-}
-
-.rsvp-section button {
-    margin: 0 6px;
-}
-
 /* FOOTER */
 footer {
     background-color: var(--primary-color);
@@ -404,38 +348,6 @@ footer {
     justify-content: center;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.w-full {
-    width: 100%;
-}
-
-.ml-2 {
-    margin-left: 0.5rem;
-}
-
-.mb-1 {
-    margin-bottom: 0.25rem;
-}
-
-.mb-2 {
-    margin-bottom: 0.5rem;
-}
-
-.mb-3 {
-    margin-bottom: 0.75rem;
-}
-
-.mb-4 {
-    margin-bottom: 1rem;
-}
-
-.mt-4 {
-    margin-top: 1rem;
-}
-
 /* Mobile first design - responsive adjustments */
 @media (min-width: 640px) {
     .event-cards {
@@ -458,15 +370,65 @@ footer {
     .section-title {
         font-size: 1.6rem;
     }
-    
-    .wedding-event:before {
-        width: 12px;
-        height: 12px;
-        left: -26px;
-    }
-    
-    .wedding-schedule {
-        margin-left: 5px;
-        padding-left: 15px;
+}
+
+/* Additional CSS styles for updated wedding site */
+
+/* Date banner styling */
+.date-banner {
+    background-color: var(--light-accent);
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Individual events section */
+.grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Secondary button adjustments */
+.secondary-btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Day header sections */
+.day-header {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 4px;
+}
+
+/* Compact event lists */
+.event-list {
+    margin-bottom: 8px;
+}
+
+.event-list-item {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Responsive improvements */
+@media (max-width: 480px) {
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 }

@@ -182,8 +182,6 @@ function setupCountdown() {
 
 // Add to Calendar functionality
 function addToCalendar(eventTitle, eventDate, eventTime, venue) {
-    showLoadingOverlay("Adding to calendar...");
-    
     const startDateTime = new Date(eventDate + ' ' + eventTime);
     const endDateTime = new Date(startDateTime.getTime() + 3600000); // Add 1 hour for event duration
 
@@ -195,24 +193,15 @@ function addToCalendar(eventTitle, eventDate, eventTime, venue) {
         '&location=' + encodeURIComponent(venue) +
         '&sf=true&output=xml';
 
-    // Hide loading after small delay to ensure smooth experience
-    setTimeout(() => {
-        hideLoadingOverlay();
-        window.open(googleCalendarUrl, '_blank');
-        
-        // Show confirmation
-        showNotification("Event added to your calendar!");
-    }, 800);
+    window.open(googleCalendarUrl, '_blank');
+    
+    // Show confirmation
+    showNotification("Event added to your calendar!");
 }
 
 // Open Google Maps directions
 function openDirections() {
-    showLoadingOverlay("Loading map...");
-    
-    setTimeout(() => {
-        hideLoadingOverlay();
-        window.open('https://maps.app.goo.gl/km1UqiT9VskKLNqU8?g_st=aw', '_blank');
-    }, 500);
+    window.open('https://maps.app.goo.gl/km1UqiT9VskKLNqU8?g_st=aw', '_blank');
 }
 
 // Live stream function

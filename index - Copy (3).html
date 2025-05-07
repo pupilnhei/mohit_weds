@@ -70,9 +70,9 @@
         <!-- Day 1 Events Section -->
         <div class="content-section">
             <h2 class="section-title script-font">Day 1: Pre-Wedding Ceremonies</h2>
-            <div class="date-banner text-center mb-4">
-                <i class="fas fa-calendar-day mr-2"></i><strong>June 04, 2025</strong>
-            </div>
+            <p class="text-center mb-4">
+                <strong><i class="fas fa-calendar-day mr-2"></i>June 04, 2025</strong>
+            </p>
             <div class="event-cards">
                 <!-- Ganesh Puja Event -->
                 <div class="event-card event-mehndi">
@@ -132,107 +132,78 @@
             </div>
         </div>
 
-        <!-- Wedding Day Events Section -->
+        <!-- Day 2-3 Events Section -->
         <div class="content-section">
-            <h2 class="section-title script-font">Day 2: Wedding Day</h2>
-            <div class="date-banner text-center mb-4">
-                <i class="fas fa-calendar-day mr-2"></i><strong>June 05, 2025</strong>
-            </div>
-            <div class="event-wedding-container">
+            <h2 class="section-title script-font">Wedding & Reception</h2>
+            <div class="event-cards">
+                <!-- Main Wedding Day Card -->
                 <div class="event-card event-wedding">
-                    <div class="wedding-schedule">
-                        <div class="wedding-event">
-                            <h3 class="text-xl script-font mb-1">Baarat Procession</h3>
-                            <p class="text-sm mb-2">
-                                <strong>Time:</strong> 9:00 AM<br>
-                                <strong>Starting Point:</strong> New Colony Dharanaula, Almora<br>
-                                <strong>Destination:</strong> Village Khirauli, Almora<br>
-                                <strong>Dress:</strong> Traditional Festive
-                            </p>
-                            <button class="btn primary-btn w-full text-sm mb-4"
-                                onclick="addToCalendar('Baarat - Saurabh & Khushi Wedding', '05 Jun 2025', '09:00', 'New Colony Dharanaula to Village Khirauli, Almora')">
-                                <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                            </button>
-                        </div>
-                        
-                        <div class="wedding-event">
-                            <h3 class="text-xl script-font mb-1">PaniGrahan Sanskar</h3>
-                            <p class="text-sm mb-2">
-                                <strong>Time:</strong> 2:00 PM<br>
-                                <strong>Venue:</strong> Village Khirauli, Almora<br>
-                                <strong>Dress:</strong> Traditional
-                            </p>
-                            <button class="btn primary-btn w-full text-sm mb-4"
-                                onclick="addToCalendar('PaniGrahan Sanskar - Saurabh & Khushi Wedding', '05 Jun 2025', '14:00', 'Village Khirauli, Almora')">
-                                <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                            </button>
-                        </div>
-                        
-                        <div class="wedding-event">
-                            <h3 class="text-xl script-font mb-1">GrahLakshmi Agaman</h3>
-                            <p class="text-sm mb-2">
-                                <strong>Time:</strong> 7:00 PM<br>
-                                <strong>Venue:</strong> Dharanaula, Almora<br>
-                                <strong>Dress:</strong> Traditional
-                            </p>
-                            <button class="btn primary-btn w-full text-sm"
-                                onclick="addToCalendar('GrahLakshmi Agaman - Saurabh & Khushi Wedding', '05 Jun 2025', '19:00', 'Dharanaula, Almora')">
-                                <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                            </button>
-                        </div>
+                    <h3 class="text-xl script-font mb-2">Wedding Day Ceremonies</h3>
+                    <p class="text-sm mb-3">
+                        <strong><i class="fas fa-calendar-day mr-2"></i>June 05, 2025</strong><br>
+                        <strong>Baarat Prasthan:</strong> 9:00 AM, New Colony Dharanaula<br>
+                        <strong>Hast Milap:</strong> Village Khirauli, Almora<br>
+                        <strong>PaniGrahan Sanskar:</strong> 2:00 PM, Village Khirauli<br>
+                        <strong>GrahLakshmi Agaman:</strong> 7:00 PM, Dharanaula, Almora<br>
+                        <strong>Dress:</strong> Traditional
+                    </p>
+                    <div class="flex flex-col space-y-2">
+                        <button class="btn primary-btn w-full text-sm"
+                            onclick="addToCalendar('Wedding Day - Saurabh & Khushi', '05 Jun 2025', '09:00', 'New Colony Dharanaula & Village Khirauli, Almora')">
+                            <i class="fas fa-calendar-plus mr-2"></i>Add All Wedding Events
+                        </button>
                     </div>
-                    <div class="mt-4 text-center">
-                        <button class="btn secondary-btn"
-                            onclick="addToCalendar('All Wedding Day Events - Saurabh & Khushi', '05 Jun 2025', '09:00', 'Dharanaula & Village Khirauli, Almora')">
-                            <i class="fas fa-calendar-plus mr-2"></i>Add All Wedding Day Events
+                </div>
+                
+                <!-- Reception Card -->
+                <div class="event-card event-wedding">
+                    <h3 class="text-xl script-font mb-2">Reception Celebrations</h3>
+                    <p class="text-sm mb-3">
+                        <strong><i class="fas fa-calendar-day mr-2"></i>June 06, 2025</strong><br>
+                        <strong>Mahila Sangeet:</strong> 3:00 PM, Hotel Jai Continental<br>
+                        <strong>PritiBhoj (Reception):</strong> 6:00 PM, Hotel Jai Continental<br>
+                        <strong>Venue:</strong> Hotel Jai Continental, Almora<br>
+                        <strong>Dress:</strong> Colorful & Formal
+                    </p>
+                    <div class="flex flex-col space-y-2">
+                        <button class="btn primary-btn w-full text-sm"
+                            onclick="addToCalendar('Reception - Saurabh & Khushi Wedding', '06 Jun 2025', '15:00', 'Hotel Jai Continental, Almora')">
+                            <i class="fas fa-calendar-plus mr-2"></i>Add Reception Events
                         </button>
                     </div>
                 </div>
             </div>
         </div>
         
-        <!-- Reception Day Events Section -->
+        <!-- Individual Event Buttons -->
         <div class="content-section">
-            <h2 class="section-title script-font">Day 3: Reception</h2>
-            <div class="date-banner text-center mb-4">
-                <i class="fas fa-calendar-day mr-2"></i><strong>June 06, 2025</strong>
-            </div>
-            <div class="event-wedding-container">
-                <div class="event-card event-reception">
-                    <div class="wedding-schedule">
-                        <div class="wedding-event">
-                            <h3 class="text-xl script-font mb-1">Mahila Sangeet</h3>
-                            <p class="text-sm mb-2">
-                                <strong>Time:</strong> 3:00 PM<br>
-                                <strong>Venue:</strong> Hotel Jai Continental, Almora<br>
-                                <strong>Dress:</strong> Colorful Traditional
-                            </p>
-                            <button class="btn primary-btn w-full text-sm mb-4"
-                                onclick="addToCalendar('Mahila Sangeet - Saurabh & Khushi Wedding', '06 Jun 2025', '15:00', 'Hotel Jai Continental, Almora')">
-                                <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                            </button>
-                        </div>
-                        
-                        <div class="wedding-event">
-                            <h3 class="text-xl script-font mb-1">PritiBhoj (Reception)</h3>
-                            <p class="text-sm mb-2">
-                                <strong>Time:</strong> 6:00 PM<br>
-                                <strong>Venue:</strong> Hotel Jai Continental, Almora<br>
-                                <strong>Dress:</strong> Formal
-                            </p>
-                            <button class="btn primary-btn w-full text-sm"
-                                onclick="addToCalendar('PritiBhoj Reception - Saurabh & Khushi Wedding', '06 Jun 2025', '18:00', 'Hotel Jai Continental, Almora')">
-                                <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
-                            </button>
-                        </div>
-                    </div>
-                    <div class="mt-4 text-center">
-                        <button class="btn secondary-btn"
-                            onclick="addToCalendar('All Reception Events - Saurabh & Khushi Wedding', '06 Jun 2025', '15:00', 'Hotel Jai Continental, Almora')">
-                            <i class="fas fa-calendar-plus mr-2"></i>Add All Reception Events
-                        </button>
-                    </div>
-                </div>
+            <h2 class="section-title script-font">Individual Event Calendar</h2>
+            <p class="text-center text-sm mb-4">Add specific events to your calendar</p>
+            <div class="grid grid-cols-2 gap-2">
+                <button class="btn secondary-btn text-sm"
+                    onclick="addToCalendar('Baarat - Saurabh & Khushi Wedding', '05 Jun 2025', '09:00', 'New Colony Dharanaula to Village Khirauli, Almora')">
+                    <i class="fas fa-calendar-plus mr-1"></i>Baarat
+                </button>
+                
+                <button class="btn secondary-btn text-sm"
+                    onclick="addToCalendar('PaniGrahan Sanskar - Saurabh & Khushi Wedding', '05 Jun 2025', '14:00', 'Village Khirauli, Almora')">
+                    <i class="fas fa-calendar-plus mr-1"></i>PaniGrahan
+                </button>
+                
+                <button class="btn secondary-btn text-sm"
+                    onclick="addToCalendar('GrahLakshmi Agaman - Saurabh & Khushi Wedding', '05 Jun 2025', '19:00', 'Dharanaula, Almora')">
+                    <i class="fas fa-calendar-plus mr-1"></i>GrahLakshmi
+                </button>
+                
+                <button class="btn secondary-btn text-sm"
+                    onclick="addToCalendar('Mahila Sangeet - Saurabh & Khushi Wedding', '06 Jun 2025', '15:00', 'Hotel Jai Continental, Almora')">
+                    <i class="fas fa-calendar-plus mr-1"></i>Sangeet
+                </button>
+                
+                <button class="btn secondary-btn text-sm"
+                    onclick="addToCalendar('PritiBhoj - Saurabh & Khushi Wedding', '06 Jun 2025', '18:00', 'Hotel Jai Continental, Almora')">
+                    <i class="fas fa-calendar-plus mr-1"></i>PritiBhoj
+                </button>
             </div>
         </div>
         
@@ -250,22 +221,6 @@
                 </p>
                 <button class="btn secondary-btn bg-blue-500 text-white" onclick="openDirections()">
                     <i class="fas fa-map-marker-alt mr-2"></i>Get Directions
-                </button>
-            </div>
-        </div>
-        
-        <!-- RSVP Section -->
-        <div class="content-section">
-            <h2 class="section-title script-font">RSVP</h2>
-            <p class="text-center mb-4">
-                We would be honored to have you join us on our special day. Please let us know if you can attend.
-            </p>
-            <div class="text-center">
-                <button class="btn primary-btn" onclick="alert('Thank you for confirming your attendance! We look forward to celebrating with you.')">
-                    <i class="fas fa-check-circle mr-2"></i>I'll Be There
-                </button>
-                <button class="btn secondary-btn ml-2" onclick="alert('We understand and appreciate your response. You will be missed!')">
-                    <i class="fas fa-times-circle mr-2"></i>Sorry, Can't Make It
                 </button>
             </div>
         </div>
