@@ -352,12 +352,10 @@ footer {
 @media (min-width: 640px) {
     .event-cards {
         flex-direction: row;
-        flex-wrap: wrap;
     }
     
     .event-card {
-        flex: 1 0 40%;
-        min-width: 230px;
+        flex: 1;
     }
 }
 
