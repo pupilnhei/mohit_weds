@@ -201,7 +201,7 @@ function addToCalendar(eventTitle, eventDate, eventTime, venue) {
 
 // Open Google Maps directions
 function openDirections() {
-    window.open('https://maps.app.goo.gl/5VZdSUqnH6Fueuxz9', '_blank');
+    window.open('https://maps.app.goo.gl/km1UqiT9VskKLNqU8?g_st=aw', '_blank');
 }
 
 // Live stream function
