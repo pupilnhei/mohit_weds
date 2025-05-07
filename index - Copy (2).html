@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh & Khushi Wedding</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="header-bar"></div>
+
+    <div class="main-container">
+        <!-- Image Slider -->
+        <div class="image-slider">
+            <div class="slider-container">
+				<div class="slide">
+                    <img src="/images/boy1.jpg" alt="Traditional ceremony">
+                </div>
+				<div class="slide">
+                    <img src="/images/gurl1.jpg" alt="Traditional ceremony">
+                </div>
+                <div class="slide">
+                    <img src="/images/boy2.jpg" alt="Traditional ceremony">
+                </div>
+				 <div class="slide">
+                    <img src="/images/gurl2.jpg" alt="Saurabh and Khushi">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+					<span class="dot" data-index="3"></span>
+                </div>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        
+        <!-- Couple Names -->
+        <div class="couple-names">
+            <h1 class="text-4xl script-font mb-2">Saurabh & Khushi</h1>
+            <div class="wedding-badge">Wedding Invitation</div>
+            <p class="text-lg font-medium mt-2">in the mountains of Uttarakhand!</p>
+            <p class="text-sm mt-3">
+                <i class="fas fa-calendar-alt mr-2"></i>June 05, 2025
+            </p>
+        </div>
+        
+        <!-- Countdown -->
+        <div class="countdown-container" id="countdown">
+            <!-- Will be populated by JavaScript -->
+        </div>
+        
+        <!-- Traditional Celebrations -->
+        <div class="content-section">
+            <h2 class="section-title script-font">Wedding Celebrations</h2>
+            <p>
+                We're blending modern love with age-old wedding traditions in our three-day celebration. From the vibrant Mehndi 
+                to the sacred Baande ceremony, each ritual honors our heritage while creating new memories in the 
+                breathtaking Uttarakhand landscape.
+            </p>
+        </div>
+        
+        <!-- Events Section -->
+        <div class="content-section">
+            <h2 class="section-title script-font">Wedding Events</h2>
+            <div class="event-cards">
+                <!-- Ganesh Puja Event -->
+                <div class="event-card event-mehndi">
+                    <h3 class="text-xl script-font mb-2">Ganesh Puja</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 04th June, 2025<br>
+                        <strong>Time:</strong> 9:00 AM<br>
+                        <strong>Venue:</strong> Dharanaula, Almora<br>
+                        <strong>Dress:</strong> Colorful Traditional
+                    </p>
+                    <button class="btn primary-btn w-full text-sm"
+                        onclick="addToCalendar('Ganesh Puja - Saurabh & Khushi Wedding', '04 Jun 2025', '09:00', 'Dharanaula, Almora')">
+                        <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                    </button>
+                </div>
+
+                <!-- Haldi Event -->
+                <div class="event-card event-haldi">
+                    <h3 class="text-xl script-font mb-2">Haldi Ceremony</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 04th June, 2025<br>
+                        <strong>Time:</strong> 12:00 PM<br>
+                        <strong>Venue:</strong> Dharanaula, Almora<br>
+                        <strong>Dress:</strong> Yellow & Gold
+                    </p>
+                    <button class="btn primary-btn w-full text-sm"
+                        onclick="addToCalendar('Haldi Ceremony - Saurabh & Khushi Wedding', '04 Jun 2025', '12:00', 'Dharanaula, Almora')">
+                        <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                    </button>
+                </div>
+
+                <!-- Suwal Pathai Event -->
+				<div class="event-card event-baande">
+                   <h3 class="text-xl script-font mb-2">Suwal Pathai Ceremony</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 04th June, 2025<br>
+                        <strong>Time:</strong> 1:00 PM<br>
+                        <strong>Venue:</strong> Dharanaula, Almora<br>
+                        <strong>Dress:</strong> Traditional
+                    </p>
+                    <div class="flex flex-col space-y-2">
+                        <button class="btn primary-btn w-full text-sm"
+                            onclick="addToCalendar('Suwal Pathai Ceremony - Saurabh & Khushi Wedding', '04 Jun 2025', '13:00', 'Dharanaula, Almora')">
+                            <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                        </button>
+                    </div>
+                </div>
+				
+				<!-- Mehendi Event -->
+                <div class="event-card event-mehndi">
+                    <h3 class="text-xl script-font mb-2">Mehendi Ceremony</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 04th June, 2025<br>
+                        <strong>Time:</strong> 7:00 PM<br>
+                        <strong>Venue:</strong> Dharanaula, Almora<br>
+                        <strong>Dress:</strong> Colorful Traditional
+                    </p>
+                    <button class="btn primary-btn w-full text-sm"
+                        onclick="addToCalendar('Mehendi Ceremony - Saurabh & Khushi Wedding', '04 Jun 2025', '19:00', 'Dharanaula, Almora')">
+                        <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                    </button>
+                </div>
+                
+				<!-- Baarat Event -->
+                <div class="event-card event-wedding">
+                    <h3 class="text-xl script-font mb-2">Baarat</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 05th June, 2025<br>
+                        <strong>Time:</strong> 9:00 AM<br>
+                        <strong>Baarat Prasthan:</strong> New Colony Dharanaula, Almora<br>
+                        <strong>Hast Milap:</strong> Village Khirauli, Almora<br>
+                    </p>
+                    <button class="btn primary-btn w-full text-sm"
+                        onclick="addToCalendar('Baarat - Saurabh & Khushi Wedding', '05 Jun 2025', '09:00', 'New Colony Dharanaula to Village Khirauli, Almora')">
+                        <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                    </button>
+                </div>
+				
+				<!-- PaniGrahan Event -->
+                <div class="event-card event-wedding">
+                    <h3 class="text-xl script-font mb-2">PaniGrahan Sanskar</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 05th June, 2025<br>
+                        <strong>Time:</strong> 2:00 PM<br>
+                        <strong>Venue:</strong> Village Khirauli, Almora<br>
+                        <strong>Dress:</strong> Traditional
+                    </p>
+                    <button class="btn primary-btn w-full text-sm"
+                        onclick="addToCalendar('PaniGrahan Sanskar - Saurabh & Khushi Wedding', '05 Jun 2025', '14:00', 'Village Khirauli, Almora')">
+                        <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                    </button>
+                </div>
+				
+				<!-- GrahLakshmi Event -->
+                <div class="event-card event-wedding">
+                    <h3 class="text-xl script-font mb-2">GrahLakshmi Agaman</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 05th June, 2025<br>
+                        <strong>Time:</strong> 7:00 PM<br>
+                        <strong>Venue:</strong> Dharanaula, Almora<br>
+                        <strong>Dress:</strong> Traditional
+                    </p>
+                    <button class="btn primary-btn w-full text-sm"
+                        onclick="addToCalendar('GrahLakshmi Agaman - Saurabh & Khushi Wedding', '05 Jun 2025', '19:00', 'Dharanaula, Almora')">
+                        <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                    </button>
+                </div>
+				
+				<!-- Mahila Sangeet Event -->
+                <div class="event-card event-mehndi">
+                    <h3 class="text-xl script-font mb-2">Mahila Sangeet</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 06th June, 2025<br>
+                        <strong>Time:</strong> 3:00 PM<br>
+                        <strong>Venue:</strong> Hotel Jai Continental, Almora<br>
+                        <strong>Dress:</strong> Colorful
+                    </p>
+                    <button class="btn primary-btn w-full text-sm"
+                        onclick="addToCalendar('Mahila Sangeet - Saurabh & Khushi Wedding', '06 Jun 2025', '15:00', 'Hotel Jai Continental, Almora')">
+                        <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                    </button>
+                </div>
+				
+				<!-- PritiBhoj Event -->
+                <div class="event-card event-wedding">
+                    <h3 class="text-xl script-font mb-2">PritiBhoj</h3>
+                    <p class="text-sm mb-3">
+                        <strong>Date:</strong> 06th June, 2025<br>
+                        <strong>Time:</strong> 6:00 PM<br>
+                        <strong>Venue:</strong> Hotel Jai Continental, Almora<br>
+                        <strong>Dress:</strong> Formal
+                    </p>
+                    <button class="btn primary-btn w-full text-sm"
+                        onclick="addToCalendar('PritiBhoj - Saurabh & Khushi Wedding', '06 Jun 2025', '18:00', 'Hotel Jai Continental, Almora')">
+                        <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar
+                    </button>
+                </div>
+				
+            </div>
+        </div>
+        
+        <!-- Venue Section -->
+        <div class="content-section">
+            <h2 class="section-title script-font">Pre Wedding Venue</h2>
+            <div class="venue-image">
+                <img src="https://www.tourmyindia.com/states/uttarakhand/image/almora-hill.webp" alt="Dharanaula, Almora">
+            </div>
+            <div class="venue-details">
+                <p class="font-bold mb-2">Dharanaula, Almora, Uttarakhand</p>
+                <p class="text-sm mb-4">
+                    Nestled amidst the serene mountains of Uttarakhand, Dharanaula offers a perfect backdrop for our wedding day.
+                    The lush greenery, crisp mountain air, and panoramic views create a magical setting for our celebration.
+                </p>
+                <button class="btn secondary-btn bg-blue-500 text-white" onclick="openDirections()">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Get Directions
+                </button>
+            </div>
+        </div>
+    </div>
+	
+    <footer>
+        <div class="container mx-auto px-4">
+            <p class="script-font text-xl mb-2">Saurabh & Khushi's Wedding</p>
+            <p class="text-sm mb-3">
+                We cordially invite you to be part of our wedding day as we embark on this beautiful journey together.
+                Your presence will make our celebration complete.
+            </p>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-white hover:text-gray-200">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-gray-200">
+                    <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-gray-200">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </div>
+            <p class="text-xs opacity-75">#SaurabhKhushiWedding</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
